@@ -1,0 +1,81 @@
+<!-- Save as forgive.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You Are Amazing 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to bottom right, #ffb6c1, #ffe4e1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #d6336c;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #ff6b81;
+    }
+    .button:disabled {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+    .main-img {
+  width: 250px;
+  max-width: 80%;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.main-img:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <p>they say you speak when you cease to be in peace with your thoughts,<br>why wouldn't I? <br>Imagined narrating it all to a beauty that feels a lottt  </p>
+ 
+  <img src="first2.jpeg" alt="aeight" class="main-img">
+  <button class="button" id="backToStart">nextt</button>
+  <script>
+      const backToStart = document.getElementById('backToStart');
+
+      backToStart.addEventListener('click', function() {
+  window.location.href = "first3.html"; 
+});
+
+backToStart.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  backToStart.disabled = true;
+});
+  </script>
+</body>
+
+</html>
